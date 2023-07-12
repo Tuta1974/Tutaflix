@@ -93,7 +93,7 @@ function App() {
           placeholder="buscar"
           onChange={(e) => setSearchKey(e.target.value)}
         />
-        <button className="btn btn-danger">Buscar</button>
+        <button className="btn btn-danger m-10 p-10">Buscar</button>
       </form>
 
       {/* contenedor para previsualizar  */}
@@ -169,7 +169,7 @@ function App() {
                     ) : (
                       "El trailer no esta disponible"
                     )}
-                    <h1 className="text-white">{movie.title}</h1>
+                    <h2 className="text-white">{movie.title}</h2>
                     <p className="text-white">{movie.overview}</p>
                   </div>
                 </div>
