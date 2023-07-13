@@ -9,6 +9,7 @@ function App() {
   const API_URL = "https://api.themoviedb.org/3";
   const API_KEY = "1dc60e151df063844f4a9104d7f6e78a";
   const IMAGE_PATH = "https://image.tmdb.org/t/p/original";
+ 
 
   // endpoint para las imagenes
   const URL_IMAGE = "https://image.tmdb.org/t/p/original";
@@ -27,6 +28,7 @@ function App() {
     const {
       data: { results },
     } = await axios.get(`${API_URL}/${type}/movie`, {
+    // } = await axios.get(`${API_URL}&language=${language}/${type}/movie`, {
       params: {
         api_key: API_KEY,
         query: searchKey,
@@ -169,7 +171,7 @@ function App() {
                     ) : (
                       "El trailer no esta disponible"
                     )}
-                    <h2 className="text-warningñ ">{movie.title}</h2>
+                    <h2 className="text-white ">{movie.title}</h2>
                     <h5 className="text-white">{movie.overview}</h5>
                   </div>
                 </div>
