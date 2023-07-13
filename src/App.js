@@ -169,8 +169,8 @@ function App() {
                     ) : (
                       "El trailer no esta disponible"
                     )}
-                    <h2 className="text-white">{movie.title}</h2>
-                    <p className="text-white">{movie.overview}</p>
+                    <h2 className="text-warningñ ">{movie.title}</h2>
+                    <h5 className="text-white">{movie.overview}</h5>
                   </div>
                 </div>
               )}
